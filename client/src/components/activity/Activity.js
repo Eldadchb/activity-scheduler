@@ -2,6 +2,7 @@ import "./Activity.css";
 import { dateFormatter } from "../../utils/dateFormater";
 
 function Activity({ activity, date, performer, pitch, onEdit, onRemove }) {
+  // Prittier format for date - CAN BE MODIFIED
   const formatedDate = dateFormatter(date);
 
   return (
@@ -15,11 +16,7 @@ function Activity({ activity, date, performer, pitch, onEdit, onRemove }) {
       </div>
       <div className="change-button">
         <input type="button" value="Edit" onClick={() => onEdit(activity.id)} />
-        <input
-          type="button"
-          value="Remove"
-          onClick={() => onRemove(activity.pitch, activity.id)}
-        />
+        <input type="button" value="Remove" onClick={() => onRemove(activity.pitch, activity.id)}/>
       </div>
     </div>
   );
