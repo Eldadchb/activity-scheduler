@@ -126,9 +126,9 @@ Let's keep our turf happy and healthy with Activity Scheduler! 🌱🎉
    
    
    
-   In general, as a frontend developer, React might be a very friendly and flexible framework but at the same time could create a mess! therefore, i put in a lot of thought in planning the app stucture and its components, in order to make it modular and efficient but yet neat, DRY and clear. 
+   In general, as a frontend developer, React might be a very friendly and flexible framework but at the same time could create a mess! therefore, I put in a lot of thought in planning the app stucture and its components, in order to make it modular and efficient but yet neat, DRY and clear. 
    
-   In specific, Since this part is crucial for managing the state and operations related to activities in the app, building the useActivities custom hook took me the longest. first while planing it then to code it.
+   In specific, since this part is crucial for managing the state and operations related to activities in the app, building the useActivities custom hook took me the longest. First while planing it then coding it.
    
    
 
@@ -148,7 +148,7 @@ Let's keep our turf happy and healthy with Activity Scheduler! 🌱🎉
    
    - Browser and device compatibility: run the app on different browsers and devices to make sure it runs smoothly
    
-   - Environment Switch: move from a development to a production environment. make sure that all environment-specific configurations (database connections, API keys etc) are set for the production environment
+   - Environment Switch: move from a development to a production environment. Make sure that all environment-specific configurations (database connections, API keys etc) are set for the production environment
      
      
 
@@ -161,7 +161,7 @@ Let's keep our turf happy and healthy with Activity Scheduler! 🌱🎉
    
    First of all - I actually enjoyed it! I love building things with React, so it was a great opportunity to have some fun 😊
    
-   The questions afterward got me thinking and researching more about the deployment process and some more DevOps tasks, which I have less experience with (but I'm on it! 🤩)
+   The follow-up questions got me thinking and researching more about the deployment process and some more DevOps tasks, which I have less experience in (but I'm on it! 🤩)
    
    This challenge made me even more motivated to join the team! So, I hope I made it!
    
@@ -174,11 +174,11 @@ Let's keep our turf happy and healthy with Activity Scheduler! 🌱🎉
    
    
    
-   - Limitations on performers: In real life, a single performer cannot be in two places at once. I'd suggest modifying the challenge rules to reflect this
+   - Limitations on performers: In real life, a single performer cannot be in two places at once. I'd suggest modifying the challenge rules to reflect that
    
    - UI blueprint: Adding a UI requirements document or a blueprint to the challenge could make it closer to a Frontend developer work. It would provide a clearer vision of what's expected from a design perspective and add another dimension to the challenge
    
-   - Basic Backend and database understanding: While the challenge is for a frontend position, i think it's importent to check a basic understanding of Backend and database
+   - Basic Backend and database understanding: While the challenge is for a frontend position, I think it's importent to check a basic understanding of Backend and database
 
 ### That's all! thank you very much for the opportunity!!! 😊🤞🏽
 
