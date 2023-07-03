@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Activity from "../activity/Activity";
 import ActivityForm from "../activityForm/ActivityForm";
-import useActivities from ".../hooks/useActivities";
+import useActivities from "../../hooks/useActivities";
 
 function Dashboard() {
   const initialActivities = {
