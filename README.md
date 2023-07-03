@@ -75,8 +75,9 @@ Let's keep our turf happy and healthy with Activity Scheduler! 🌱🎉
 
 **<u>Implementation</u>**:
 
-1. I used only **Axios** and **Math**.
+1. What libraries did you use? What are they used for? Why did you choose them specifically?
    
+   I used only **Axios** and **Math**.
    Axios, a promise-based HTTP client for browser and node.js, was my choice to handle the API requests. It makes API calls to be super easy with a few code lines.
    Math, built-in JavaScript library, for rounding numbers.
    At the begining I considered using Redux for state management. However, I found it unnecessary for this simple app, as its complexity outweighed its benefits.
@@ -84,35 +85,23 @@ Let's keep our turf happy and healthy with Activity Scheduler! 🌱🎉
    
    
 
-2. - The ability to modify / add new tasks and performers
-   
-   - Task prioritization: Users could rank tasks based on urgency or importance
-   
-   - Recurring tasks: allow users to set tasks that repeat on a daily, weekly, monthly, or custom schedule
-   
-   - Pre-made turf maintenance plans. that should based on proffesional knowledge (which i don't have yet!)
-   
-   - An option to toggling between current and old activities for comprehensive activity tracking (at the moment i filtered out the old activities)
-   
-   - Display options: an ability to choose how visualize the activities: on a calendar, as a list, associated with either a pitch or a performer
-   
-   - An export feature for integration with 3rd party tools like calendars or Excel
-   
-   - Push notifications (by email as well) to remind users about upcoming activities or changes
-   
-   - Search: search for tasks using different filters and keywords
-   
-   - Analytics feature: to monitor productivity and task distribution
-   
-   - A customizable user interface: coloring tasks, background etc
-   
-   - Sharing activity and an option to invite pepole by email
-   
-   - Offline mode
-   
-   - Weather based on current location
-   
-   - Sign up, Login and Authentication
+2. What improvements or new features would you add if you had more time to work on the problem?
+
+- The ability to modify / add new tasks and performers
+- Task prioritization: Users could rank tasks based on urgency or importanc
+- Recurring tasks: allow users to set tasks that repeat on a daily, weekly, monthly, or custom schedule
+- Pre-made turf maintenance plans: that should based on proffesional knowledge (which i don't have yet!)
+- An option to toggling between current and old activities for comprehensive activity tracking (at the moment i filtered out the old activities)
+- Display options: an ability to choose how visualize the activities: on a calendar, as a list, associated with either a pitch or a performer
+- An export feature for integration with 3rd party tools like calendars or Excel
+- Push notifications (by email as well) to remind users about upcoming activities or changes
+- Search: search for tasks using different filters and keywords
+- Analytics feature: to monitor productivity and task distribution
+- A customizable user interface: coloring tasks, background etc
+- Sharing activity and an option to invite pepole by email
+- Offline mode
+- Weather based on current location
+- Sign up, Login and Authentication
      
      
 
@@ -140,13 +129,13 @@ Let's keep our turf happy and healthy with Activity Scheduler! 🌱🎉
 
 **<u>Feedback:</u>**
 
-1. First of all - I actually enjoyed it! I love building things with React, so it was a great opportunity to have some fun :)
+1. First of all - I actually enjoyed it! I love building things with React, so it was a great opportunity to have some fun 😊
    
-   The questions afterward got me thinking and researching more about the deployment process and some more DevOps tasks, which I have less experience with (but I'm on it!)
+   The questions afterward got me thinking and researching more about the deployment process and some more DevOps tasks, which I have less experience with (but I'm on it! 🤩)
    
    This challenge made me even more motivated to join the team! So, I hope I made it!
    
-   Luckily, I didn't have any technical issues :)
+   Luckily, I didn't have any technical issues 😊
 
 2. - Limitations on performers: In real life, a single performer cannot be in two places at once. I'd suggest modifying the challenge rules to reflect this
    
@@ -154,6 +143,7 @@ Let's keep our turf happy and healthy with Activity Scheduler! 🌱🎉
    
    - Basic Backend and database understanding: While the challenge is for a frontend position, i 
 
-##Author
+## Author
 
-Eldad Chidra [Github](https://github.com/eldadchb) - [LinkedIn](https://www.linkedin.com/in/eldad-chidra/)
+Eldad Chidra 
+[Github](https://github.com/eldadchb) - [LinkedIn](https://www.linkedin.com/in/eldad-chidra/)
