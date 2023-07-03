@@ -1,3 +1,4 @@
+import "./Dashboard.css";
 import { useState } from "react";
 import Activity from "../activity/Activity";
 import ActivityForm from "../activityForm/ActivityForm";
@@ -49,12 +50,15 @@ function Dashboard() {
     .sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
 
   return (
-    <div>
+    <div className="Dashboard">
       {isFormOpen && (
         <ActivityForm
           onSubmit={handleFormSubmit}
           activity={editingActivity}
-          closeForm={() => setIsFormOpen(false)}
+          closeForm={() => {
+            setIsFormOpen(false);
+            setEditingActivity(false);
+          }}
         />
       )}
 
