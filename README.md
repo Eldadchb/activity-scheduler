@@ -178,9 +178,9 @@ Let's keep our turf happy and healthy with Activity Scheduler! 🌱🎉
    
    - UI blueprint: Adding a UI requirements document or a blueprint to the challenge could make it closer to a Frontend developer work. It would provide a clearer vision of what's expected from a design perspective and add another dimension to the challenge
    
-   - Basic Backend and database understanding: While the challenge is for a frontend position, i 
+   - Basic Backend and database understanding: While the challenge is for a frontend position, i think it's importent to check a basic understanding of Backend and database
 
-## 
+### That's all! thank you very much for the opportunity!!! 😊🤞🏽
 
 ## Author
 
