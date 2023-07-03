@@ -1,0 +1,60 @@
+.activity-box {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.date-left-side {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.activity-info {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.activity-name {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.activity-date,
+.activity-performer,
+.activity-pitch {
+  font-size: 16px;
+  color: #666;
+}
+
+.change-button {
+  display: flex;
+  gap: 10px;
+}
+
+.change-button input[type="button"] {
+  padding: 10px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.change-button input[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+.change-button input[type="button"]:last-child {
+  background-color: #dc3545;
+}
+
+.change-button input[type="button"]:last-child:hover {
+  background-color: #c82333;
+}
