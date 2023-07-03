@@ -1,5 +1,5 @@
 import "./Activity.css";
-import { dateFormatter } from "../utils/dateFormater";
+import { dateFormatter } from "../../utils/dateFormater";
 
 function Activity({ activity, date, performer, pitch, onEdit, onRemove }) {
   const formatedDate = dateFormatter(date);
