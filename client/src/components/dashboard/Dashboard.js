@@ -10,11 +10,18 @@ function Dashboard() {
     "Pitch 3": [],
   };
 
-  const { activities, addActivity, editActivity, removeActivity } = useActivities(initialActivities);
+  // Custom hook to manipulate activities
+  const { activities, addActivity, editActivity, removeActivity } =
+    useActivities(initialActivities);
+
+  // Form visibility
   const [isFormOpen, setIsFormOpen] = useState(false);
+
+  // Tracks of which activity is currently being edited
   const [editingActivity, setEditingActivity] = useState(false);
 
   const handleFormSubmit = (formData) => {
+    // Checks if editing or adding a new activity
     if (editingActivity) {
       editActivity(formData, editingActivity);
     } else {
@@ -24,19 +31,21 @@ function Dashboard() {
     setEditingActivity(false);
   };
 
-  const handleEditActivity = (activity) => {
-    setEditingActivity(activity);
+  const handleEditActivity = (activityObj) => {
+    setEditingActivity(activityObj);
     setIsFormOpen(true);
   };
 
+  // Combine all activities (for rendering)
   const allActivities = ["Pitch 1", "Pitch 2", "Pitch 3"].flatMap((pitch) =>
-    activities[pitch].map((activity) => ({ ...activity, pitch }))
+    activities[pitch].map((activityObj) => ({ ...activityObj, pitch }))
   );
 
   const timeNow = new Date();
 
+  // Filters out activities that have already occurred and sorts the remaining activities in ascending order by date
   const filteredSortedList = allActivities
-    .filter((activity) => Date.parse(activity.date) - timeNow > 0)
+    .filter((activity) => Date.parse(activity.date) - timeNow > 0) // If we want to show already occurred activities, we can take it out
     .sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
 
   return (
@@ -58,16 +67,16 @@ function Dashboard() {
       )}
 
       <div className="activities-list">
-        {filteredSortedList.map((activity, index) => (
+        {filteredSortedList.map((activityObj, index) => (
           <Activity
             key={index}
-            activity={activity.activity}
-            date={activity.date}
-            pitch={activity.pitch}
-            performer={activity.performer}
-            onEdit={() => handleEditActivity(activity)}
-            onRemove={() => removeActivity(activity.pitch, activity.id)}
-            id={activity.id}
+            id={activityObj.id}
+            activity={activityObj.activity}
+            date={activityObj.date}
+            pitch={activityObj.pitch}
+            performer={activityObj.performer}
+            onEdit={() => handleEditActivity(activityObj)}
+            onRemove={() => removeActivity(activityObj.pitch, activityObj.id)}
           />
         ))}
       </div>
