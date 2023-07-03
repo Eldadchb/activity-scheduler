@@ -1,3 +1,4 @@
+import "./Weather.css";
 import React, { useState } from "react";
 const { getWeather } = require("../../services/weatherApiService");
 

@@ -1,0 +1,43 @@
+.weather-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.weather-container form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.weather-container input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.weather-container button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.weather-container button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.weather-container button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.weather-container div {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
