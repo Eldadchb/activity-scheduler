@@ -31,7 +31,7 @@ function Weather() {
       {weatherData && (
         <>
           <div>
-            {weatherData.location.country + ", " + weatherData.location.name}
+            {weatherData.location.name + ", " + weatherData.location.country}
           </div>
           <div>Temperature: {Math.round(weatherData.current.temp_c)}°C</div>
           <div>
