@@ -17,12 +17,6 @@ Welcome to Activity Scheduler, your new favorite tool for turf management! 🙌 
 
 - Get the current temperature and a heads-up on the expected rain or precipitation for the rest of the day
 
-## 🛠️ Built With
-
-- React
-- Axios
-- WeatherAPI
-
 ## 🚀 Getting Started
 
 Want to join the turf management revolution? Here's how to get Activity Scheduler up and running locally:
@@ -70,3 +64,19 @@ Want to join the turf management revolution? Here's how to get Activity Schedule
 WOOHOO! The application should now be running at [http://localhost:3000](http://localhost:3000). Welcome to your new turf management journey with Activity Scheduler!
 
 Let's keep our turf happy and healthy with Activity Scheduler! 🌱🎉
+
+
+## 🛠️ Built With
+
+- [React](https://reactjs.org) - Frontend framework for building user interfaces
+- [Axios](https://axios-http.com/) - Promise based HTTP client for the browser and node.js
+- [WeatherAPI](https://www.weatherapi.com/) - JSON and XML weather API and geolocation developer API
+
+
+## Contributing
+
+Improvements are welcome!
+
+## Author
+
+Eldad Chidra [Github](https://github.com/eldadchb) - [LinkedIn](https://www.linkedin.com/in/eldad-chidra/)
