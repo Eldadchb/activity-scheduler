@@ -35,7 +35,7 @@ Want to join the turf management revolution? Here's how to get Activity Schedule
    git clone https://github.com/eldadchb/activity-scheduler.git
    ```
 
-2. Next, navigate into your shiny new cloned repository:
+2. Next, navigate into the client folder:
    
    ```bash
    cd client
