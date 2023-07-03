@@ -92,11 +92,11 @@ Let's keep our turf happy and healthy with Activity Scheduler! 🌱🎉
    
    - The ability to modify / add new tasks and performers
    
-   - Task prioritization: Users could rank tasks based on urgency or importanc
+   - Task prioritization: Users could rank tasks based on urgency or importance
    
    - Recurring tasks: allow users to set tasks that repeat on a daily, weekly, monthly, or custom schedule
    
-   - Pre-made turf maintenance plans: that should based on proffesional knowledge (which i don't have yet!)
+   - Pre-made turf maintenance plans: that should based on proffesional knowledge (which i don't have yet! 😅)
    
    - An option to toggling between current and old activities for comprehensive activity tracking (at the moment i filtered out the old activities)
    
