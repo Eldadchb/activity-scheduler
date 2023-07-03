@@ -31,7 +31,7 @@ Want to join the turf management revolution? Here's how to get Activity Schedule
 
 - Node.js
 - npm
-- A WeatherAPI key. You can easily sign up here: [https://www.weatherapi.com/signup.aspx]
+- A WeatherAPI key. You can easily sign up here: [https://www.weatherapi.com/signup.aspx](https://www.weatherapi.com/signup.aspx)
 
 ### Installation
 
