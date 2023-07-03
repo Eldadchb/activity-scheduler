@@ -33,7 +33,6 @@
   box-sizing: border-box;
 }
 
-/* Button Styles */
 .new-activity-form form input[type="submit"],
 .new-activity-form form input[type="button"] {
   margin-top: 20px;
