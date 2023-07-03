@@ -1,13 +1,12 @@
 import { useState } from "react";
 
-const ALERT_MSG = "Error: There is already an activity scheduled on this pitch at this time";
+const ALERT_MSG =
+  "Error: There is already an activity scheduled on this pitch at this time";
 
 function useActivities(initialActivities) {
-
   const [activities, setActivities] = useState(initialActivities);
 
   const addActivity = (formData) => {
-
     const newActivityId = Date.now();
     const newActivity = { ...formData, id: newActivityId };
     const conflictingActivity = activities[newActivity.pitch].find(
@@ -26,7 +25,6 @@ function useActivities(initialActivities) {
   };
 
   const editActivity = (formData, activityToEdit) => {
-    
     const conflictingActivity = activities[formData.pitch].find(
       (activity) =>
         Date.parse(activity.date) === Date.parse(formData.date) &&
@@ -38,15 +36,24 @@ function useActivities(initialActivities) {
       return;
     }
 
-    const updatedActivities = activities[activityToEdit.pitch].map((activity) =>
-      activity.id === activityToEdit.id
-        ? { ...formData, id: activityToEdit.id }
-        : activity
-    );
+    // Remove the activity from its original pitch
+    const updatedOriginalPitchActivities = activities[
+      activityToEdit.pitch
+    ].filter((activity) => activity.id !== activityToEdit.id);
+
+    // Create a new activity for the new pitch
+    const updatedActivity = { ...formData, id: activityToEdit.id };
+
+    // Add the new activity to the new pitch
+    const updatedNewPitchActivities = [
+      ...activities[formData.pitch],
+      updatedActivity,
+    ];
 
     setActivities({
       ...activities,
-      [activityToEdit.pitch]: updatedActivities,
+      [activityToEdit.pitch]: updatedOriginalPitchActivities,
+      [formData.pitch]: updatedNewPitchActivities,
     });
   };
 
