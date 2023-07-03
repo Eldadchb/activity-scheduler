@@ -5,6 +5,7 @@ function Weather() {
   const [cityName, setCityName] = useState("");
   const [weatherData, setWeatherData] = useState();
 
+  // Gets weather data from getWeather service
   const fetchWeatherData = async () => {
     const weather = await getWeather(cityName);
     setWeatherData(weather);
