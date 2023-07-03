@@ -5,6 +5,7 @@ function ActivityForm({ onSubmit, activity, closeForm }) {
 
   const [userInputs, setUserInputs] = useState({});
 
+  // Updates userInputs state when activity's prop changes
   useEffect(() => {
     setUserInputs(activity || {});
   }, [activity]);
@@ -19,12 +20,13 @@ function ActivityForm({ onSubmit, activity, closeForm }) {
     onSubmit(userInputs);
   };
 
+  // Options for the select inputs - CAN BE MODIFIED
   const pitchOptions = ["Pitch 1", "Pitch 2", "Pitch 3"];
   const activityOptions = ["Mowing", "Fertilisation", "Irrigation", "Aeration"];
   const performerOptions = ["John", "Tom", "Tony"];
 
   return (
-    <div className="new-event-form">
+    <div className="new-activity-form">
       <form onSubmit={handleSubmit}>
         <SelectInput
           label="Pitch"
@@ -71,7 +73,7 @@ function ActivityForm({ onSubmit, activity, closeForm }) {
   );
 }
 
-// Subcomponents SelectInput and TextInput
+// Subcomponent for select input fields
 function SelectInput({ label, name, value, handleChange, options }) {
     return (
       <>
@@ -88,6 +90,7 @@ function SelectInput({ label, name, value, handleChange, options }) {
     );
   }
   
+  // Subcomponent for text input fields
   function TextInput({ label, name, type, value, handleChange }) {
     return (
       <>
